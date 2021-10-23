@@ -13,7 +13,7 @@ spec:
         app: scaprojectfrontend
     spec:
       containers:
-      - name: myapp
+      - name: scaprojectfrontend
         image: japhetism/scaprojectfrontend
         imagePullPolicy: Always
         resources:

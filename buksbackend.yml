@@ -13,7 +13,7 @@ spec:
         app: buksbackend
     spec:
       containers:
-      - name: myapp
+      - name: buksbackend
         image: japhetism/buksbackend
         imagePullPolicy: Always
         resources:
@@ -21,7 +21,7 @@ spec:
             memory: "512Mi"
             cpu: "500m"
         ports:
-        - containerPort: 3000
+        - containerPort: 4000
 
 
 
@@ -37,8 +37,8 @@ spec:
   selector:
     app: buksbackend
   ports:
-  - port: 3000
-    targetPort: 3000
+  - port: 4000
+    targetPort: 4000
     protocol: TCP
-    nodePort: 31200
+    nodePort: 32767
 
